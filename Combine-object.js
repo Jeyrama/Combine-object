@@ -13,3 +13,6 @@ Example:
 The combine function should be a good citizen, 
 so should not mutate the input objects.
 */
+
+
+// Solution
