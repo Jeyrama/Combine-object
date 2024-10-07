@@ -16,3 +16,14 @@ so should not mutate the input objects.
 
 
 // Solution
+
+function combine() {
+  let obj = {}
+
+  for (let i = 0; i < arguments.length; i++) {
+        for (let key in arguments[i]) {
+          obj[key] = obj[key] ? obj[key] + arguments[i][key]: arguments[i][key]
+        }
+  }
+  return obj;
+}
