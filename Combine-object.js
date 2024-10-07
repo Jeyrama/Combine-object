@@ -29,3 +29,8 @@ function combine() {
 }
 
 // or
+
+const combine = (...params) => params.reduce((a, b) => {
+  for (const x in b) { a[x] = x in a ? a[x] + b[x] : b[x] };
+  return a;
+ }, {});
