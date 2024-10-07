@@ -27,3 +27,5 @@ function combine() {
   }
   return obj;
 }
+
+// or
